@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML FUND ME</title>
+	<style>
+		.form {
+			display: flex;
+			flex-direction: column;
+			width: 280px;
+			gap: 8px 4px;
+		}
+
+		.form div {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+
+		input {
+			width: 100%;
+			height: 38px;
+			border-radius: 5px;
+			border: 1px solid gray;
+			outline: none;
+		}
+
+		button {
+			height: 38px;
+			width: 100%;
+			padding: 12px 20px;
+			margin-block: 8px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="form">
+
+		<div>
+
+			<label for="connectBtn">
+				<button id="connectBtn" name="connectBtn">Connect</button>
+			</label>
+			<label for="fundBtn">
+				<button id="fundBtn" name="fundBtn">Fund</button>
+			</label>
+			<label for="getBalance">
+				<button id="getBalance" name="getBalance">Get Balance</button>
+			</label>
+			<label for="withdrawBtn">
+				<button id="withdrawBtn" name="withdrawBtn">withdraw</button>
+			</label>
+		</div>
+		<label for="deposit">
+			<input type="text" placeholder="Min - 0.1 eth" name="deposit" id="depositEth" />
+		</label>
+
+	</div>
+
+	<script defe type=" module" src="./app.js">
+				<!-- import { ethers } from "https://cdnjs.cloudflare.com/ajax/libs/ethers/6.7.0/ethers.min.js"; -->
+				</script>
+</body>
+
+</html>
